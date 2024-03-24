@@ -1,0 +1,12 @@
+version: "3.1"
+
+services:
+  database:
+    image: postgres:15.2
+    container_name: "demo_mvc"
+    environment:
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_USER=root
+      - POSTGRES_DB=demo_mvc
+    ports:
+      - "5440:5432"
